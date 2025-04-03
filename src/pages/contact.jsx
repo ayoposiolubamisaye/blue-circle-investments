@@ -84,8 +84,8 @@ const Contact = () => {
           <ContactItem>
             <FaMapMarkerAlt className="icon" />
             <div className="text">
-              <div>5229 Harford Road</div>
-              <div>Baltimore MD 21214</div>
+              <div>7301 Harford Road</div>
+              <div>Baltimore MD 21234</div>
             </div>
           </ContactItem>
           <ContactItem>
