@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFingerprint, FaUserNurse, FaCarAlt, FaIdCard, FaFileContract, FaShip, FaPassport } from 'react-icons/fa';
+import { FaFingerprint, FaUserNurse, FaCarAlt, FaIdCard, FaFileContract, FaShip, FaPassport, FaCar } from 'react-icons/fa';
 import { MdSecurity } from 'react-icons/md';
 import styled from 'styled-components';
 import colors from '../styles/colors';
@@ -123,6 +123,11 @@ const Services = () => {
   ];
 
   const automotiveServices = [
+    {
+      icon: <FaCar />,
+      title: "Tag & Title Services",
+      description: "Professional tag and title services for all types of vehicles, ensuring proper registration and documentation."
+    },
     {
       icon: <FaCarAlt />,
       title: "Auto Sales & Notary Service",
