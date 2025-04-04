@@ -10,6 +10,10 @@ const HeroSection = styled.div`
     color: white;
     padding: 4rem 2rem;
     text-align: center;
+
+    @media (max-width: 768px) {
+        padding: 3rem 1rem;
+    }
 `;
 
 const HeroContent = styled.div`
@@ -25,6 +29,10 @@ const HeroContent = styled.div`
     h1 {
         font-size: 3rem;
         margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 2.25rem;
+        }
     }
 
     p {
@@ -33,12 +41,21 @@ const HeroContent = styled.div`
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
+
+        @media (max-width: 768px) {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
     }
 `;
 
 const ServicesSection = styled.div`
     padding: 4rem 2rem;
     background: ${colors.background};
+
+    @media (max-width: 768px) {
+        padding: 3rem 1rem;
+    }
 `;
 
 const SectionTitle = styled.h2`
@@ -47,6 +64,11 @@ const SectionTitle = styled.h2`
     font-size: 2.5rem;
     margin-bottom: 3rem;
     position: relative;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 
     &:after {
         content: '';
@@ -66,6 +88,11 @@ const ServicesGrid = styled.div`
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 `;
 
 const ServiceCard = styled.div`
@@ -96,6 +123,18 @@ const ServiceCard = styled.div`
         color: ${colors.text};
         line-height: 1.6;
     }
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+
+        .icon {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
 `;
 
 const CTASection = styled.div`
@@ -104,6 +143,11 @@ const CTASection = styled.div`
     padding: 4rem 2rem;
     text-align: center;
     margin-top: 4rem;
+
+    @media (max-width: 768px) {
+        padding: 3rem 1rem;
+        margin-top: 3rem;
+    }
 `;
 
 const CTAContent = styled.div`
@@ -113,11 +157,21 @@ const CTAContent = styled.div`
     h2 {
         font-size: 2.5rem;
         margin-bottom: 1.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
     }
 
     p {
         font-size: 1.2rem;
         margin-bottom: 2rem;
+
+        @media (max-width: 768px) {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
     }
 `;
 
@@ -126,6 +180,11 @@ const ButtonGroup = styled.div`
     gap: 1rem;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
 `;
 
 const StyledButton = styled(Link)`
@@ -142,6 +201,12 @@ const StyledButton = styled(Link)`
 
     &:hover {
         transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
     }
 `;
 

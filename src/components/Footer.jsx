@@ -7,8 +7,12 @@ import bluecircleLogo from '../assets/blue-circle-logo.png';
 const FooterContainer = styled.footer`
     background: ${colors.primary};
     color: white;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
     margin-top: 4rem;
+
+    @media (max-width: 768px) {
+        padding: 2rem 1rem;
+    }
 `;
 
 const FooterContent = styled.div`
@@ -17,6 +21,12 @@ const FooterContent = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
 `;
 
 const FooterSection = styled.div`
@@ -37,6 +47,16 @@ const FooterSection = styled.div`
         line-height: 1.6;
         margin-bottom: 1rem;
     }
+
+    @media (max-width: 768px) {
+        .logo {
+            margin: 0 auto 1rem;
+        }
+
+        p {
+            margin-bottom: 0.75rem;
+        }
+    }
 `;
 
 const FooterLink = styled(Link)`
@@ -45,9 +65,19 @@ const FooterLink = styled(Link)`
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
+    padding: 0.5rem 0;
 
     &:hover {
         color: white;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+        &:last-child {
+            border-bottom: none;
+        }
     }
 `;
 
@@ -57,6 +87,12 @@ const Copyright = styled.div`
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+
+    @media (max-width: 768px) {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+    }
 `;
 
 const Footer = () => {
