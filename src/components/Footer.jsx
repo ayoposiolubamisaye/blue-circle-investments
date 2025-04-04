@@ -78,8 +78,8 @@ const Footer = () => {
 
                 <FooterSection>
                     <h3>Contact Info</h3>
-                    <p>5229 Harford Road</p>
-                    <p>Baltimore MD 21214</p>
+                    <p>7301 Harford Road</p>
+                    <p>Baltimore MD 21234</p>
                     <p>Main Office: 443-527-0884</p>
                     <p>Email: bluecirclehealth@gmail.com</p>
                 </FooterSection>
